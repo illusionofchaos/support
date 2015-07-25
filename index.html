@@ -9,41 +9,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
   <body>
-
-      <header>
-        <h1>Support</h1>
-        <p>Contact page</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/illusionofchaos/support" class="button fork"><strong>Report a bug</strong></a>
+    <header>
+      <h1>A Dark Room Support</h1>
+      <p>Contact page</p>
+    </header>
+    <div id="banner">
+      <span id="logo"></span>
+      <a href="https://github.com/illusionofchaos/support/issues/new" class="button fork"><strong>Report a bug</strong></a>
       </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
+      <div class="wrapper">
+        <nav>
         <ul></ul>
       </nav>
       <section>
-        <h3>
-<a id="this-is-a-support-page" class="anchor" href="#this-is-a-support-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact form</h3>
-    <form action="http://formspree.io/dt.ioc.dev@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-      </section>
-      <footer>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+        <h3>Contact form</h3>
+        <form action="http://formspree.io/dt.ioc.dev@gmail.com"
+          method="POST">
+          <p><input type="text" name="name"  placeholder="Your name"></p>
+          <input type="hidden" name="_subject" value="Support" />
+          <p><input type="text" name="_replyto" required placeholder="Your email (required)" /></p>
+          <p><textarea rows="10" cols="45" name="text" placeholder="Your message"></textarea></p>
+          <p><input type="submit" value="Send"></p>
+        </section>
+        <footer>
+        </footer>
+      </div>
+      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+      
+    </body>
+  </html>
